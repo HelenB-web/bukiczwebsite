@@ -1,0 +1,415 @@
+<?php
+require '../connect.php';  //Links the database connection
+session_start();
+?>
+
+
+<!doctype html>
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bukicz New Site</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<a href="./addProduct.php">Add New Product</a>
+	
+	<section id="header">
+		<div class="logo-container">
+				  <!-- Link the logo to index.html -->
+                <a href="index.html">
+                    <img src="images/bukicz logo.png" alt="Logo" class="logo">
+				</a>
+            </div>
+		
+		<div>
+			<ul id="navbar">
+				<li><a href="necklace.html">NECKLACE</a></li>
+				<li><a href="pendants.html">PENDANTS</a></li>
+				<li><a href="earrings.html">EARRINGS</a></li>
+				<li><a href="rings.html">RINGS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+			</ul>
+		</div>
+		
+		<div id="profiletab">
+			<li><a href="loginandregistrationform.html" title="Login/Register">Login/Register</a></li>
+			<li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+				<a href="#" id="close"><i class="far fa-times"></i></a>
+		</div>
+		
+		<div id="mobile">a
+			<a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+			<i id="bar" class="fas fa-outdent"></i>
+		</div>
+	</section>
+	
+	<section id="hero">
+		<h4>Embrace-the-beauty-of-nature</h4>
+		<h2>Clean beauty</h2>
+		<h1>for all</h1>
+		<p>Luxurious Skin</p>
+		<button>Shop Now</button>
+	</section>
+	
+	<section id="feature" class="section-p1">
+		<div class="fe-box">
+			<img src="images/" alt="">
+			<h6>Free Shipping</h6>
+		</div>
+		<div class="fe-box">
+			<img src="images/" alt="">
+			<h6>Eco-Friendly</h6>
+		</div>
+		<div class="fe-box">
+			<img src="images/" alt="">
+			<h6>Sustainability</h6>
+		</div>
+		<div class="fe-box">
+			<img src="images/" alt="">
+			<h6>Non-Toxic</h6>
+		</div>
+	</section>
+	
+	<section id="FeaturedProducts" class="section-p1">
+		<h2>Featured Products</h2>
+		<p>Summer Collection New Morden Design</p>
+		<div class="pro-container">
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+		</div>
+	</section>
+	
+	<section id="banner" class="section-m1">
+		<h4>Design your piece</h4>
+		<h2>Up to <span>30% off</span> - All embossed custom ring</h2>
+		<button class="normal">Explore More</button>
+	</section>
+	
+	<section id="NewArrivals" class="section-p1">
+		<h2>New Arrivals</h2>
+		<p>Summer Collection New Morden Design</p>
+		<div class="pro-container">
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+			<div class="pro">
+				<img src="images/products/f1.jpg" alt="">
+				<div class="des">
+					<span>BUKICZ</span>
+					<h5>BOLD ASSYMMETRY RING</h5>
+					<div class="star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<h4>$1100</h4>
+				</div>
+				<a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+			</div>
+		</div>
+	</section>
+	
+	<section id="sm-banner" class="section-p1">
+		<div class="banner-box">
+			<h4>A Lifetime Piece</h4>
+			<h2>FINE JEWELRY</h2>
+			<span>Embrace your beauty in its luxury</span>
+			<button class="white">Learn More</button>
+		</div>
+		<div class="banner-box banner-box2">
+			<h4>A Lifetime Piece</h4>
+			<h2>BOTANICAL SKIN</h2>
+			<span>Nature's nuture</span>
+			<button class="white">Learn More</button>
+		</div>
+	</section>
+	
+	<section id="banner3">
+		<div class="banner-box">
+			<h2>SEASONAL SALE</h2>
+			<h3>Winter Collection -40% OFF</h3>
+		</div>
+		<div class="banner-box banner-box2">
+			<h2>SEASONAL SALE</h2>
+			<h3>Spring/Summer Collection -40% OFF</h3>
+		</div>
+		<div class="banner-box banner-box3">
+			<h2>SEASONAL SALE</h2>
+			<h3>Necklace Pendant -40% OFF</h3>
+		</div>
+	</section>
+	
+	<section id="newsletter" class="section-p1 section-m1">
+		<div class="newstext">
+			<h4>Sign Up For Newsletters</h4>
+			<p>Get E-mail updates about our latest shop and <span>special offers.</span>
+			</p>
+		</div>
+		<div class="form">
+			<input type="text" placeholder="Your email address">
+			<button class="normal">Sign Up</button>
+		</div>
+	</section>
+	
+	<footer class="section-p1">
+		<div>
+			<img class="logo" src="images/bukicz logo.png" alt="">
+		</div>
+		
+		<div class="col">
+			<h4>Contact</h4>
+			<p><strong>Address:</strong> 3237 Acoma trl, Fort Worth, Texas. 76177.</p>
+			<p><strong>Phone:</strong> 682-231-0061</p>
+			<p><strong>Hours:</strong> 24hr, Tues - Sat</p>
+			<div class="follow">
+				<h4>Follow Us</h4>
+				<div class="icon">
+					<i class="fa-brands fa-facebook-f"></i>
+					<i class="fa-brands fa-instagram"></i>
+					<i class="fa-brands fa-pinterest-p"></i>
+					<i class="fa-brands fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col">
+			<h4>About</h4>
+			<a href="#">About Us</a>
+			<a href="#">Delivery Information</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">Terms & Conditions</a>
+			<a href="#">Contact Us</a>
+		</div>
+		
+		<div class="col">
+			<h4>My Account</h4>
+			<a href="#">Sign In</a>
+			<a href="#">View Cart</a>
+			<a href="#">My Wishlist</a>
+			<a href="#">Track My Order</a>
+			<a href="#">Help</a>
+		</div>
+		
+		<div class="col install">
+			<h4>Install App</h4>
+			<p>From App Store or Google Play</p>
+			<div class="row">
+				<img src="img/pay/app.jpg" alt="">
+				<img src="img/pay/play.jpg" alt="">
+			</div>
+			<p>Secured Payment Gateways </p>
+			<img src="img/pay/pay.png" alt="">
+		</div>
+		
+		<div class="copyright">
+			<p>&copy; 2025 BUKICZ.</p>
+		</div>
+	</footer>
+	
+	
+	
+	
+	<script src="script.js"></script>
+</body>
+	
+</html>
+
